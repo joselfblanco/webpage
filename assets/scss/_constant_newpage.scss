@@ -1,0 +1,153 @@
+// estilos del fondo
+.fondo{
+    height: 100%;
+    padding-top: 100px;
+}
+// estilos del encabezado
+.home{
+    .imghome1{
+        background-size: 100%;
+        .container-encabezado{
+          padding-top: 37px;
+          padding-bottom: 37px;
+          .encabezado{
+            background-size: 216px 60px;
+            background-repeat: no-repeat;
+            height: 60px;
+            background-position-x: 50%;
+            text-align: end;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+
+            .button-contactenos{
+                   font-family: Arial, Helvetica, sans-serif;
+                   outline:none;
+                   position: absolute;
+                   top:50px;
+                   height: 45px;
+                   width: 162px;
+                   color: #002A60;
+                   right: 80px;
+                   border: 0;
+                   border-radius: 50px;
+                   font-size: 14px;
+                   letter-spacing: 1px;
+                   font-weight:900;
+                }
+                .button-contactenos:hover{
+                outline: none;
+                 animation: contactanos 0.5s forwards;
+                }
+                @keyframes contactanos {
+                 from{}
+                 to{box-shadow: 0px 0px 15px black;}
+                 to{transform: scale(1.05);}
+                }
+
+            
+          }
+        } 
+        .div-app-bar{
+            background-size: 100%;
+        }
+
+        .nav-top-float{
+          position: fixed;
+          z-index: 16;
+          background-size: 100%;
+         }
+         
+      } 
+}
+// estilos del pie de pagina
+.div-footer{
+    width: 100%;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-left: 10px;
+    .p-siguenos{
+      font-size: 13px;
+      letter-spacing: 6px;
+      font-weight: bold;
+    }
+  }
+
+//   estilos para pantallas de telefonos
+ @media only screen and (max-width: 600px){
+     
+    //  estilos del encabezado
+     .home{  
+        .imghome1{  
+          
+          .container-encabezado{
+            padding-top: 4%;
+            padding-bottom: 4%;
+            .encabezado{
+              background-size: 50%;
+              background-position-x: center;
+              height: 40px;
+              .button-contactenos{
+                display: none;
+              }
+            }    
+          }
+        }
+      }
+    //   estilos del pie de pagina
+    .div-footer{
+      text-align: center;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .img-logo-footer{
+          display: none;
+        }
+        .imagenes-footer{
+          width: 100%!important;
+        }
+      }
+ }
+ @media only screen and (max-width: 900px){
+     
+    //  estilos del encabezado
+     .home{  
+        .imghome1{  
+          
+          .container-encabezado{
+            padding-top: 4%;
+            padding-bottom: 4%;
+            .encabezado{
+              background-size: 50%;
+              background-position-x: center;
+              height: 40px;
+              .button-contactenos{
+                display: none;
+              }
+            }    
+          }
+        }
+      }
+    //   estilos del pie de pagina
+    .div-footer{
+      text-align: center;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .img-logo-footer{
+          display: none;
+        }
+        .imagenes-footer{
+          width: 100%!important;
+        }
+      }
+ }

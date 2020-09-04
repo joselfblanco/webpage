@@ -1,0 +1,59 @@
+@import 'constantes';
+@import 'constant_newpage';
+// fondo de pagina completa
+.fondo{
+    background-image: linear-gradient(to bottom,$color_negro, $color_primario);
+}
+// estilos del encabezado
+.home{
+    .imghome1{
+        background-image: linear-gradient(to bottom, $color_primario, $color_celeste);
+        .container-encabezado{
+          .encabezado{
+            // background-image: url('../../assets/imagenes/rofailogo.svg');
+           .button-contactenos{
+               background-color: $color_secundario;
+            }
+          }
+        } 
+        .div-app-bar{
+            background-image: linear-gradient(to bottom, $color_primario, $color_celeste);
+        }
+      } 
+}
+// estilos del pie de pagina
+.div-footer{
+    
+  }
+
+//   estilos para pantallas de telefonos
+ @media only screen and (max-width: 600px){
+     
+     //  estilos del encabezado
+    .home{  
+         .imghome1{  
+             background-image: url('../../assets/imagenes/home/mobil/fondo1.png');
+          }
+        }
+
+        
+        // estilos particulares de cada pagina
+    .fondo{
+          .titulo{
+            font-size: 40px;
+            color: $color_gris;
+            text-shadow: 1px 1px 10px black;
+         }
+      }
+ }
+
+// diseño particular de cada pagina
+//  capsulas de contenido
+// aqui damos estilo al titulo de la seccion
+.titulo{
+    font-size: 64px;
+    color: white;
+    text-shadow: 1px 5px 8px black;
+ }
+
+

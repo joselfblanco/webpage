@@ -1,0 +1,596 @@
+@import 'constantes';
+
+.sidenav {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ right: 0;
+ background-color: #111;
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+}
+
+.sidenav a {
+ padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 1em;
+ font-weight: normal;
+ color: white;
+ display: block;
+ transition: 0.3s;
+}
+
+.sidenav a:hover {
+ background: #AEF455;
+   color: #002A60;
+   font-weight: bolder;
+}
+
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+ color: white;
+ background: transparent;
+}
+
+/* @media screen and (max-height: 450px) {
+ .sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+} */
+
+
+
+
+.nav-top-float{
+ display: none;
+ position: fixed;
+ z-index: 16;
+ background-size: 100%;
+ background: white;
+}
+
+
+
+
+.visible {
+ display: block;
+}
+
+
+
+.animation-fade {
+   animation: fadein 4s;
+   -moz-animation: fadein 2s; /* Firefox */
+   -webkit-animation: fadein 2s; /* Safari and Chrome */
+   -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+   from { opacity:0; }
+   to { opacity:1; }
+}
+@-moz-keyframes fadein { /* Firefox */
+ from { opacity:0; }
+ to { opacity:1; }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+ from { opacity:0; }
+ to { opacity:1; }
+}
+@-o-keyframes fadein { /* Opera */
+ from { opacity:0; }
+ to { opacity:1; }
+}
+
+
+.div-app-bar{
+  position: fixed;
+  width: 100%;
+  background-image: url(../../assets/imagenes/home/fondo1.png);background-size: 100%;
+  z-index: 1;
+  .container-encabezado{
+      padding-top: 37px;
+      padding-bottom: 37px;
+      background: #00163A;
+      .button-contactenos{
+          border: 0px;
+          height: 50px;
+          width: 162px;
+          color: #002A60;
+          background-color: #AEF455;
+          border-radius: 50px;
+          border-bottom-color: red;
+          margin-right: 50px;
+          font-size: 14px;
+          letter-spacing: 2px;
+          font-weight: bold;
+      }
+  }
+}
+
+.container-encabezado{
+  padding-top: 37px;
+  padding-bottom: 37px;
+  .button-contactenos{
+      border: 0px;
+      height: 50px;
+      width: 162px;
+      color: #002A60;
+      background-color: #AEF455;
+      border-radius: 50px;
+      border-bottom-color: red;
+      margin-right: 50px;
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-weight: bold;
+  }
+}
+
+
+.encabezado{
+  a{
+    text-decoration: none;
+}
+  background-image: url(../../assets/imagenes/rofailogo2.svg);
+  background-size: 216px 60px;
+  background-repeat: no-repeat;
+  height: 60px;
+  /* padding-top: 37px; */
+  background-position-x: 50%;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  img{
+      filter: invert(0.9) sepia(1) saturate(5) hue-rotate(175deg);
+  }
+}
+
+.section-contactanos{
+  input,textarea{
+    border: 1px solid #00FF19;
+  }
+  .row{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  width: 100%;
+  padding-top: 64px;
+  .p-estamos{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+  }
+  .div-numeros{
+    font-size: 20px;
+    font-weight: bold;
+    color: #002A60;
+    margin: 0;
+  }
+  .p-direccion{
+    font-size: 20px;
+    font-weight: bold;
+    color: #002A60;
+    margin: 0;
+  }
+  .p-correo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #002A60;
+  }
+  .p-nombre{
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #002A60;
+  }
+  .input-nombre{
+    height: 54px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .p-email{
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #002A60;
+    margin-top: 35px;
+  }
+  .input-email{
+    height: 54px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .p-mensaje{
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #002A60;
+  }
+  .input-text-area{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 180px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .div-button{
+    width: 100%;
+    text-align-last: end;
+    margin-right: 90px;
+    button{
+      background-color: #00FF19;
+      height: 57px;
+      padding-left: 28px;
+      padding-right: 28px;
+      border-radius: 10px;
+      margin-top: 46px;
+      color: white;
+      font-size: 13px;
+      letter-spacing: 3px;
+      border: 0;
+      font-weight: bold;
+    }
+  }
+}
+
+footer{
+  background-color: #002A60;
+  .logo-redes{
+      display: flex;
+      justify-content: space-between;
+      figure img{
+          width: 80%;
+      }
+      .siguenos{
+          width: 20%;
+          text-align: center;
+          letter-spacing: 0.5em;
+          div{
+              justify-content: space-between;
+              width: 100%;
+              text-align-last: justify;
+          }
+      }
+      
+  }
+  p{
+      padding-bottom: 1rem;
+      margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container-encabezado{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    .encabezado{
+      background-size: 100px 30px;
+      background-position-x: center;
+      height: 40px;
+      .button-contactenos{
+        display: none;
+      }
+    }
+  }
+  
+.container-nav{
+    .button-contactenos{
+        display: none;
+    }
+}
+
+  .section-contactanos{
+    padding-top: 5%;
+    text-align: center;
+      .p-estamos{
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        margin-bottom: 5%;
+      }
+      .dato-empresa{
+        
+        margin: 0!important;
+        p{
+          font-size: 0.8em;
+        }
+      }
+      .nombre-email{
+        p{
+          text-align: left;
+        }
+        .p-email{
+          margin-top: 5%;
+        }
+        margin: 0!important;
+      }
+      .mensaje{
+        margin: 0!important;
+        p{
+          text-align: left;
+        }
+        .p-mensaje{
+          margin-top: 5%;
+        }
+        textarea{
+          width: 100%;
+        }
+      }
+      .div-button{
+        margin: 5%;
+        width: auto;
+        text-align-last: center;
+        button{
+          margin-top: 0px;
+          width: 100%;
+          height: 40px;
+        }
+      }
+  }
+
+  .logo-redes{
+    padding-bottom: 10%;
+    figure{
+      display: none;
+    }
+    .siguenos{
+      width: 100%!important;
+    }
+  }
+
+    .button-contactenos{
+        display: none;
+      }
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  .section-contactanos{
+    padding-top: 5%;
+    text-align: center;
+      .p-estamos{
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        margin-bottom: 5%;
+      }
+      .dato-empresa{
+        
+        margin: 0!important;
+        p{
+          font-size: 0.8em;
+        }
+      }
+      .nombre-email{
+        p{
+          text-align: left;
+        }
+        .p-email{
+          margin-top: 5%;
+        }
+        margin: 0!important;
+      }
+      .mensaje{
+        margin: 0!important;
+        p{
+          text-align: left;
+        }
+        .p-mensaje{
+          margin-top: 5%;
+        }
+        textarea{
+          width: 100%;
+        }
+      }
+      .div-button{
+        margin: 5%;
+        width: auto;
+        text-align-last: center;
+        button{
+          margin-top: 0px;
+          width: 100%;
+          height: 40px;
+        }
+      }
+  }
+
+  .button-contactenos{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .section-contactanos{
+    padding-top: 5%;
+    text-align: center;
+      .p-estamos{
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        margin-bottom: 5%;
+      }
+      .dato-empresa{
+        
+        margin: 0!important;
+        p{
+          font-size: 0.8em;
+        }
+      }
+      .nombre-email{
+        p{
+          text-align: left;
+        }
+        .p-email{
+          margin-top: 5%;
+        }
+        margin: 0!important;
+      }
+      .mensaje{
+        margin: 0!important;
+        p{
+          text-align: left;
+        }
+        .p-mensaje{
+          margin-top: 5%;
+        }
+        textarea{
+          width: 100%;
+        }
+      }
+      .div-button{
+        margin: 5%;
+        width: auto;
+        text-align-last: center;
+        button{
+          margin-top: 0px;
+          width: 100%;
+          height: 40px;
+        }
+      }
+  }
+
+  .button-contactenos{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .section-contactanos{
+    padding-top: 5%;
+    text-align: center;
+      .p-estamos{
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        margin-bottom: 5%;
+      }
+      .dato-empresa{
+        
+        margin: 0!important;
+        p{
+          font-size: 0.8em;
+        }
+      }
+      .nombre-email{
+        p{
+          text-align: left;
+        }
+        .p-email{
+          margin-top: 5%;
+        }
+        margin: 0!important;
+      }
+      .mensaje{
+        margin: 0!important;
+        p{
+          text-align: left;
+        }
+        .p-mensaje{
+          margin-top: 5%;
+        }
+        textarea{
+          width: 100%;
+        }
+      }
+      .div-button{
+        margin: 0;
+        text-align-last: end;
+        button{
+          width: auto;
+          height: 57px;
+          padding-left: 28px;
+          padding-right: 28px;
+          border-radius: 10px;
+          margin-top: 46px;
+          color: white;
+          font-size: 13px;
+          letter-spacing: 3px;
+          border: 0;
+          font-weight: bold;
+        }
+      }
+  }
+  .button-contactenos{
+    display: inline;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .section-contactanos{
+    padding-top: 5%;
+    text-align: center;
+      .p-estamos{
+        font-size: 2em;
+        font-weight: 800;
+        letter-spacing: 6px;
+        margin-bottom: 5%;
+        text-align-last: left;
+      }
+      .dato-empresa{
+        
+        margin: 0!important;
+        text-align-last: left;
+        p{
+          font-size: 1.3em;
+        }
+      }
+      .nombre-email{
+        p{
+          text-align: left;
+        }
+        .p-email{
+          margin-top: 5%;
+        }
+        margin: 0!important;
+      }
+      .mensaje{
+        margin: 0!important;
+        p{
+          text-align: left;
+        }
+        .p-mensaje{
+          margin-top: 5%;
+        }
+        textarea{
+          width: 100%;
+        }
+      }
+      .div-button{
+        margin: 0;
+        text-align-last: end;
+        button{
+          width: auto;
+          height: 57px;
+          padding-left: 28px;
+          padding-right: 28px;
+          border-radius: 10px;
+          margin-top: 46px;
+          color: white;
+          font-size: 13px;
+          letter-spacing: 3px;
+          border: 0;
+          font-weight: bold;
+        }
+      }
+  }
+
+  .button-contactenos{
+    display: inline;
+  }
+
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rofai-Contacto</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../assets/css/contacto.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+
+      .popover-body {
+        padding: .5rem .75rem;
+        color: #212529;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .ol-attribution.ol-uncollapsible{
+      display: none;
+    }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script> -->
+
+
+    
+</head>
+<body onscroll="myFunction()" id="myDIV" onclick="closeNav()">
+  <div id="mySidenav" class="sidenav text-capitalize" style="z-index: 17;">
+    <a style="color: #AEF455;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="../index.html">home</a>
+    <a href="../assets/desarrollo_web.html">desarrollo web </a>
+    <a href="../assets/aplicaciones.html">desarrollo de app</a>
+    <a href="../assets/aplicaciones_web.html">desarrollo de aplicaciones web</a>
+    <a href="../assets/ecomerce.html#">desarrollo de ecomerce</a>
+    <a href="../assets/marketing.html">Marketing digital</a>
+    <a href="../assets/chatbot.html">Chatbot</a>
+    <a href="../assets/capacitacion_sap.html">capacitacion sap</a>
+    <a href="../assets/nosotros.html">nosotros</a>
+    <a href="../assets/contacto.html">contacto</a>
+  </div>
+    <header>
+      <nav>
+        <div class="container-fluid container-nav nav-top-float s"  >
+          <div class=" container">
+            <div class="col-md-12">
+              <div class="container container-encabezado">
+                <img class="acordeon" src="../assets/imagenes/iconos/iconomenu.svg" alt="" onclick="openNav()">
+                <div class="encabezado">                 
+                  <button style="outline: none;" class="text-uppercase button-contactenos" data-target="#contactenos" data-toggle="modal"  >
+                    Contáctenos
+                  </button> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid container-nav ">
+          <div class=" container">
+            <div class="col-md-12">
+              <div class="container container-encabezado">
+                <img class="acordeon" src="../assets/imagenes/iconos/iconomenu.svg" alt="" onclick="openNav()">
+                <div class="encabezado">
+                  <button style="outline: none;" class="button-contactenos"  data-target="#contactenos" data-toggle="modal"  >CONTÁCTENOS</button>   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </Header>
+  <section>
+    
+    <div id="map" class="map">
+      <div id="popup"></div>
+    </div>
+  </section>
+  <section class="container section-contactanos" id="contactenos">
+        <div class="row">
+          <div class="col-md-4 row dato-empresa">
+            <div class="col-md-2" >
+              <img src="../assets/imagenes/iconos/telefono.svg" alt="">
+            </div>
+            <div class="col-md-10" >
+              <p class="div-numeros">+51 946 287 375</p>
+              <p  class="div-numeros">+51 962 533 025</p>
+            </div>
+            <div class="col-md-2">
+              <img src="../assets/imagenes/iconos/ubicacion.svg" alt="">
+            </div>
+            <div class="col-md-10">
+              <p class="p-direccion">San Luis, Lima, Perú</p>
+            </div>
+            <div class="col-md-2">
+              <img src="../assets/imagenes/iconos/correo.svg" alt="">
+            </div>
+            <div class="col-md-10">
+              <p class="p-correo">ventas@rofai.biz</p>
+            </div>
+          </div>
+          <div class="col-md-4 row nombre-email">
+            <div class="col-md-12">
+              <p class="p-nombre">NOMBRE Y APELLIDO</p>
+              <input type="text" placeholder="Nombre" class="input-nombre">
+            </div>
+            <div class="col-md-12">
+              <p class="p-email">EMAIL</p>
+              <input type="text" placeholder="Email" class="input-email">
+            </div>
+          </div>
+          <div class="col-md-4 row mensaje">
+            <div class="col-md-12">
+              <p class="p-mensaje">MENSAJE</p>
+            <textarea name="" id="" cols="50" rows="10" placeholder="Excribenos" class="input-text-area"></textarea>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+         <div class="col-md-12">
+          <div class="div-button">
+            <button>ENVIAR</button>
+          </div>
+         </div>
+        </div>
+  </section>
+  <footer class="container-fluid pt-5 mt-5">
+    <div class="container ">
+        <div class="logo-redes">
+          <div>
+            <figure>
+              <img src="../assets/imagenes/rofailogo.svg" alt="">
+            </figure>
+          </div>
+          <div class="siguenos">
+            <p class="text-white">SIGUENOS</p>
+            <div>
+              <a target="_blank" href="https://www.facebook.com/rofai.biz/"><img src="../assets/imagenes/iconos/icon-twitter.svg" alt=""  ></a>
+            <a target="_blank" href="https://www.facebook.com/rofai.biz/"><img src="../assets/imagenes/iconos/icon-facebook.svg" alt=""  ></a>
+            <a target="_blank" href="https://www.instagram.com/consultoriarofai/"><img src="../assets/imagenes/iconos/icon-instagram.svg" alt=""  ></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCR0EUPT6npUelnhu7nHvmQA"><img src="../assets/imagenes/iconos/icon-youtube.svg" alt=""  ></a>
+            </div>
+          </div>
+        </div>
+        <div style="width: 100%;text-align: center;" class="text-white mt-2">
+          <p>© 2020 Rofai.biz</p>
+        </div>
+    </div>
+</footer>
+    <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+<script type="text/javascript">
+
+
+var iconFeature = new ol.Feature({
+  geometry: new ol.geom.Point(ol.proj.fromLonLat([-76.9946741, -12.0780709])),
+  name: 'Rofai Business S.A.C',
+  population: 4000,
+  rainfall: 500
+});
+
+var  map = new ol.Map({
+  target: 'map',
+  layers: [
+    new ol.layer.Tile({
+      source: new ol.source.OSM(),
+    }),
+    new ol.layer.Vector({
+      source: new ol.source.Vector({
+        features: [iconFeature]
+      }),
+      style: new ol.style.Style({
+        image: new ol.style.Icon({
+          anchor: [0.5, 46],
+          anchorXUnits: 'fraction',
+          anchorYUnits: 'pixels',
+          src: '../../assets/imagenes/rofaimark.png'
+        })
+      })
+    })
+  ],
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-76.9946741, -12.0780709]),
+    zoom: 16.5
+  })
+});
+
+
+var element = document.getElementById('popup');
+
+var popup = new ol.Overlay({
+  element: element,
+  positioning: 'bottom-center',
+  stopEvent: false,
+  offset: [0, -50]
+});
+
+map.addOverlay(popup);
+
+map.on('click', function(evt) {
+  try {
+    var feature = map.forEachFeatureAtPixel(evt.pixel,
+    function(feature) {
+      return feature;
+    });
+  if (feature) {
+    var coordinates = feature.getGeometry().getCoordinates();
+    popup.setPosition(coordinates);
+    $(element).popover({
+      placement: 'top',
+      html: true,
+      content: feature.get('name')
+    });
+    $(element).popover('show');
+  } else {
+    $(element).popover('destroy');
+  }
+  } catch (error) {
+    
+  }
+});
+
+// map.on('pointermove', function(e) {
+//   console.log(map);
+//   if (e.dragging) {
+//     $(element).popover('destroy');
+//     return;
+//   }
+//   var pixel = map.getEventPixel(e.originalEvent);
+//   var hit = map.hasFeatureAtPixel(pixel);
+//   map.getTarget().style.cursor = hit ? 'pointer' : '';
+// });
+
+</script>
+<div id="contactenos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content formulario">
+      <div  class="modal-header text-center">
+        <img src="../assets/imagenes/rofailogo2.svg" alt="">
+        <button class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class=" container">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 text-center">
+              <a target="_black" href="https://api.whatsapp.com/send?phone=51946287375"><img class="iconos" style="margin-bottom: 10px;width: 20px;" src="../assets/imagenes/iconos/telefono.svg" alt=""></a>
+              <p style="line-height: 2px;"> <strong>+51 946 287 375</strong></p>
+              <p style="line-height: 2px;"> <strong>+51 962 533 025</strong></p>
+            </div>
+            <div class="col-sm-6 text-center">
+              <a target="_black" href="../assets/contacto.html"><img style="margin-bottom: 5px;width: 25px;" class="iconos" src="../assets/imagenes/iconos/ubicacion.svg" alt=""></a>
+              <p style="line-height: 15px;"><strong>San Luis, Lima, Perú</strong></p>              </div>
+            <div class="col-sm-12 text-center ">
+              <img style="width: 30px" src="../assets/imagenes/iconos/correo.svg" alt="">
+              <h3 style="font-family: rezland; color:#002a60" class="text-center"><strong>@mail</strong></h3>
+            </div>              
+          </div>
+          <div class="col-sm-12 row text-left">
+            <div class="col-md-12">
+              <small class=" text-uppercase"><strong>Nombre y apellido</strong></small>
+              <input type="text" placeholder="Nombre y Apellido" class="form-control" required>
+            </div>
+            <div class="col-sm-12">
+              <small class=" text-uppercase"><strong>Email</strong></small>
+              <input type="text" placeholder="Email" class="form-control" required type="email">
+            </div>
+           
+          </div>
+          <div class="col-sm-12 row text-left">
+            <div class="col-md-12">
+              <div class="form-group">
+                <small class=" text-uppercase"><strong>Mensaje</strong></small>
+                <textarea id="my-textarea" placeholder="Escribenos" class="form-control" name="" rows="6"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+         <div class="col-sm-12 text-center ">
+            <a class=" btn-enviar">ENVIAR</a>
+         </div>
+        </div>
+        </div>
+        <table>
+
+
+        </table>
+      </div>
+      <div class="modal-footer">
+        Footer
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/anime.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/app.js"></script> 
+</body>
+</html>

@@ -1,0 +1,2481 @@
+@import 'constantes';
+
+  
+/* @media screen and (max-height: 450px) {
+ .sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+} */
+.minimo{display: none;}
+
+
+
+.button-details{
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  border: 0px;
+  height: 40px;
+  width: 162px;
+  color: #002A60;
+  background-color: #AEF455;
+  border-radius: 50px;
+  border-bottom-color: red;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+.button-details:hover{
+  outline: none;
+  animation: detalles 0.5s forwards;
+}
+@keyframes detalles {
+  from{}
+  to{box-shadow: 0px 0px 10px black;}
+  to{transform: scale(1.05);}
+  
+}
+
+.encabezado{
+  // background-image: url('../../assets/imagenes/rofailogo.svg');
+  background-size: 216px 60px;
+  background-repeat: no-repeat;
+  height: 60px;
+  /* padding-top: 37px; */
+  background-position-x: 50%;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-top-float{
+ display: none;
+ position: fixed;
+ z-index: 16;
+ background-image: url('../../assets/imagenes/home/fondo1.png');
+ background-size: 100%;
+}
+
+.visible {
+ display: block;
+}
+
+.animation-fade {
+   animation: fadein 4s;
+   -moz-animation: fadein 2s; /* Firefox */
+   -webkit-animation: fadein 2s; /* Safari and Chrome */
+   -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+   from { opacity:0; }
+   to { opacity:1; }
+}
+@-moz-keyframes fadein { /* Firefox */
+ from { opacity:0; }
+ to { opacity:1; }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+ from { opacity:0; }
+ to { opacity:1; }
+}
+@-o-keyframes fadein { /* Opera */
+ from { opacity:0; }
+ to { opacity:1; }
+}
+
+.home{
+    .imghome1{
+        background-image: url('../../assets/imagenes/home/fondo1.png');
+        background-size: 100%;
+          .container-encabezado{
+              a{
+                text-decoration: none;
+              }
+            }
+        
+  
+      //   .container-encabezado{
+      //     padding-top: 37px;
+      //     padding-bottom: 37px;
+
+      // }
+      
+      .div-container{
+        overflow: hidden;
+        .div-row{
+          margin-top: 3%;
+          .section-text-header{
+            padding-left: 220px;
+            text-align: -webkit-right;
+            .sub-section-text-header{
+              width: 480px;
+              text-align: initial;
+            }
+          }
+        }
+      }
+        .seccion-uno{
+          display: flex;
+          padding-top: 216px;
+          width: 100%;
+          .center-text-seccion-uno{
+            width: 50%;
+            text-align: -webkit-center;
+          }
+        }
+
+        .p-texto-entretenimiento{
+          margin: 0;
+          font-size: 50px;
+          font-weight: 700;
+          color: white;
+          line-height: 1;
+          width: 450px;
+        }
+        .p-presente{
+          font-size: 60px;
+          color:$color_secundario;
+          font-weight: 500;
+          margin-top: 32px;
+          line-height: 1;
+          width: 485px;
+        }
+        .div-exitos{
+          margin-top: 90px;
+          width: 180%;
+          margin-left: -120px;
+        }
+        .p-exitos{
+          margin-left: 0px;
+          padding-top: -5px;
+          width: 100%;
+          color:white;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 4px;
+          width: 100%;
+        }
+        
+        .gamarraya-contador{
+          .gamarra-numerador{
+            span{
+              cursor: pointer;
+
+            }
+            //margin-top: 60px;
+            
+            height: 56px;
+            display: flex;
+            align-items: center;
+            //padding-left: 80px;
+            .p-numerador{
+              margin: 0;
+              letter-spacing: 6px;
+              font-size: 13px;
+              font-weight: 600;
+            }
+            .icon-lefth{
+              margin-right: 18px;
+              margin-left: 66px;
+            }
+          }
+        }
+        .seccion-hacemos{
+        
+          background-image: url('../../assets/imagenes/home/Map.png');
+      
+          .p-hacemos{
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 6px;
+            color: $color_secundario;
+            font-weight: bold;
+            margin: 0;
+          }
+          .p-texto-hacemos{
+            margin-top: 21px;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 300;
+          }
+          .div-numero-clientes{
+            text-align: center;
+            justify-content: center;
+            margin-top: 0.7%;
+            .color-div-clientes{
+              position: relative;
+              color:$color_secundario;
+           
+              .p-numero-clientes{
+                font-size: 6.5em;
+                margin-top: -40px;
+                margin-bottom: -10px;
+                font-weight: 900;
+              }
+              .p-texto-cliente{
+                margin-top: -20px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 6px;
+              }
+            }
+            .color-div-web{
+              position: relative;
+              color: #34C9F7;
+              .p-numero-web{
+                font-size: 6.5em;
+                margin-top: -40px;
+                margin-bottom: -10px;
+                font-weight: 900;
+              }
+              .p-texto-web{
+                margin-top: -20px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 6px;
+              }
+            }
+          }
+        }
+      }
+
+    .imghome2{
+        background-image: url('../../assets/imagenes/home/fondo2.png');
+        //height: 1360px;
+        background-size: 100%;
+        padding-top: 16%;
+        .mejores{
+          color: white;
+          text-align: center;
+          position: relative;
+          margin-bottom: -3.5em;
+          .p-text-somos{
+            font-size: 3em;
+            font-weight: 900;
+            margin: 0;
+            line-height: 0;
+          }
+          .p-text-mejores{
+            font-size: 4.5em;
+            font-weight: 900;
+          }
+        }
+        .backgroundimagelosmejores{
+          background-image: url('../../assets/imagenes/home/losmejoresen.png');
+          background-size: 110%;
+          background-repeat: no-repeat;
+          background-position: right 95px;
+          .backgroundimageelipseleft{
+            background-image: url('../../assets/imagenes/home/elipseleft.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: -70em -20em;
+            .backgroundimageelipserigth{
+
+              background-image: url('../../assets/imagenes/home/elipserigth.png');
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: 70em -15em;
+              .div-portafolio{
+                //margin-top: 172px;
+                padding-bottom: 7%;
+                .div-text-portafolio{
+                  align-self: flex-end;
+                  margin-left: 50px;
+                  .text-portafolio{
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .carousel-indicators{
+          align-items: center;
+          left: -40px;
+          margin-top: 10px;
+          margin-bottom: 60px;
+          a{
+            position: relative;
+          }
+          li{
+            margin-top: -150px;
+            background: $color_celeste;
+            width: 15px;
+            height: 15px;
+            margin: 4px;
+            border-radius: 50%;
+            border: none;
+            opacity: 0.4;
+          }
+          li.active{
+            opacity: 0.8;
+            background: $color_secundario;
+          }
+        }
+        
+
+        .card{
+            width: 250px;
+            height: 400px;
+            background-color: transparent;
+            border-color: #AEF455;
+            color: #AEF455;
+            text-align: center;
+            border-radius: 10px;
+            .logo-card{
+              margin-bottom: 15px;
+            }
+            .div-guion{
+              text-align: -webkit-center;
+              margin-bottom: 20px;
+              .dibujo-guion{
+                height: 3px;
+                background-color: #AEF455;
+                width: 76px;
+              }
+              
+            }
+            .nombre-curso{
+              font-size: 18px;
+              font-weight: 800;
+              margin-bottom: 22px;
+            }
+            .texto-curso{
+              font-size: 14px;
+              font-weight: 300;
+              // margin-bottom: 43px;
+            }
+            .ver-mas-card{
+              outline: none;
+              // display: none;
+              // margin: 0px;
+              text-align: center;
+              border: 0px;
+              height: 37px;
+              width: 150px;
+              color: #002A60;
+              background-color: #AEF455;
+              border-radius: 50px;
+              
+              font-size: 14px;
+              letter-spacing: 2px;
+              font-weight: 900;
+            }
+            .ver-mas-card:hover{
+              animation:vermas 0.5s forwards;
+            }
+            @keyframes vermas{
+              from{}
+              to{box-shadow: 0 0 10px;}
+              to{transform: scale(1.05);}
+            }
+            
+             
+          // }
+         
+
+
+
+          //para que funcione el carrusel
+
+
+          
+
+          .carousel-inner{
+            // .card:hover{
+            //   border-color: #0051BA;
+            //   .logo-card>img{
+            //     filter: invert(0.9) sepia(1) saturate(5) hue-rotate(175deg);
+            //   }
+            //   .dibujo-guion{
+            //     background-color: #0051BA;
+            //   }
+            //   .nombre-curso{
+            //     color: #0051BA;
+            //   }
+            //   .texto-curso{
+            //     color: black;
+            //     font-weight: 900;
+            //   }
+            //   .ver-mas-card{
+            //     display: inline;
+            //   }
+            //   animation: cartas 1s forwards;
+            // }
+            // @keyframes cartas {
+            //   from{}
+            //   to{background-color: white;}
+            //   to{color:black}
+             
+            // }
+          }
+        //fin para que funcione el carrusel
+
+
+
+        }
+        .card:hover{
+          border-color: #0051BA;
+         //  height: 453px;
+          .logo-card>img{
+            filter: invert(0.9) sepia(1) saturate(5) hue-rotate(175deg);
+          }
+          .dibujo-guion{
+            background-color: #0051BA;
+          }
+          .nombre-curso{
+            color: #0051BA;
+          }
+          .texto-curso{
+            color: black;
+            font-weight: 900;
+          }
+          .ver-mas-card{
+            display: inline;
+          }
+          animation: cartas 1s forwards;
+        }
+       @keyframes cartas {
+         from{}
+         to{background-color: white;}
+         to{color:black}
+         to{transform: scale(1.1);}
+       }
+      }
+
+    .imghome3{
+        background-image: url('../../assets/imagenes/home/fondo3.png');
+        height: 100%;
+        background-size: 220%;
+        .section-apps{
+          overflow: hidden;
+          .img-app1{
+            right: 45%;
+            position: relative;
+          }
+          .div-img-app2{
+            left: 8%;
+            position: relative;
+          }
+          .div-text-apps{
+            display: flex;
+            .div-text-cliente{
+              width: 395px;
+              .text-cliente{
+                font-size: 16px;
+                color: white;
+                letter-spacing: 6px;
+                font-weight: 700;
+              }
+              .text-contenido-cliente{
+                font-size: 19px;
+                color: white;
+                font-weight: 300;
+                margin-top: 33px;
+                margin-bottom: 31px;
+                line-height: 1.5;
+              }
+              .div-vistas{
+                display: flex;
+                justify-content: space-between;
+                .div-visita{
+                  color:$color_celeste;
+                  text-align: center;
+
+                  .p-vista-numero{
+                    font-size: 60px;
+                    font-weight: 800;
+                  }
+                  .p-texto-visitas{
+                    font-size: 14px;
+                    letter-spacing: 6px;
+                    font-weight: 900;
+                  }
+                }
+                .div-conversion{
+                  color:$color_celeste;
+                  text-align: center;
+                  .p-numero-conversion{
+                    font-size: 60px;
+                    font-weight: 800;
+                  }
+                  .p-text-conversion{
+                    font-size: 14px;
+                    letter-spacing: 6px;
+                    font-weight: 900;
+                  }
+                }
+              }
+            }
+            .button-rigth-portafolio{
+              align-self: center;
+              margin-bottom: 30%;
+              margin-left: 20%;
+                        
+            }
+          }
+          
+        }
+        .div-casos-exito-button{
+          text-align: -webkit-center;    
+           margin-top: 4%;
+           padding-bottom: 8%;
+           .flex-casos-exito{
+            display: flex;
+            align-items: baseline;
+            .p-text-exitos{
+              font-size: 13px;
+              letter-spacing: 6px;
+              font-weight: 700;
+              color: white;
+            }
+            .img-icon-exitos{
+              margin-left: 23px;
+            }
+           }
+        }
+        // .div-nuestro-equipo{
+        //   background-image: url('/../../assets/imagenes/home/nuestroequipo.png');
+        //   background-repeat: no-repeat;
+        //   background-size: 120%;
+        //   .p-nuestro-equipo{
+        //     font-size: 50px;
+        //     color: #AEF455;
+        //     font-weight: 800;
+        //     text-align: center;
+        //     padding-top: 3%;
+        //     padding-bottom: 5%;
+        //   }
+        //   .div-equipos{
+        //     width: 100%;
+        //     text-align: -webkit-center;
+        //     img{
+        //       width: 100%;
+        //       height: 100%;
+        //     }
+        //     .div-texto-equipo{
+        //       margin-top: 7%;
+        //       margin-left: 3.6%;
+        //       margin-right: 5%;
+        //       margin-bottom: 2%;
+        //       text-align: left;
+        //       color: white;
+        //       .p-nombre-equipo{
+        //         font-size: 30px;
+        //         font-weight: 700;
+        //       }
+        //       .p-area-equipo{
+        //         font-size: 16px;
+        //         font-weight: 700;
+        //       }
+        //     }
+        //   }
+          
+        // }
+        .titulo_nuestro_equi{
+          height: 200px;
+          background-image: url('../../assets/imagenes/home/nuestroequipo.png');
+        }
+        .texto_nuestro_equi{
+          margin-top: 15px;
+          color: $color_secundario;
+          font-size: 4em;
+          font-weight: 900;
+        }
+        .equipo_texto{
+          color:white;
+          font-weight: 900;
+        }
+        
+      }
+      
+    .section-casos{
+        padding-top: 150px;
+        height: 100%;
+       
+        text-align: -webkit-center;
+        .div-testimonio{
+          margin-top: -50px;
+          .p-testimonio{
+            color: $color_negro;
+            font-weight: 600;
+            font-size: 20px;
+              text-align: center;
+              width: 100%;
+          } 
+        }
+        .testimonio{
+          font-size: 20px;
+          color: $color_secundario;
+          font-weight: 800;
+        }
+        
+        
+        .comillas{
+          margin-top: -50px;
+          // margin-left: 10px;
+          margin-bottom: 50px;
+        }
+        .img-empresas{
+          margin-top: 133px;
+          margin-bottom: 64px;
+        }
+      }
+
+    .section-contactanos{
+        input,textarea,
+        input::-webkit-input-placeholder {
+        font-size: 14px;
+        font-weight: 900;
+        }
+        color: $color_primario;
+        width: 100%;
+        background-color: #9EFF22;
+        padding-top: 64px;
+        font-weight: 900;
+        text-align: left;
+        .estamos_para{
+          font-size: 34px;
+          letter-spacing: 0;
+          margin-bottom: 50px;
+          text-align: left;
+        }
+        .numeros{
+          font-size: 20px;
+          margin: 0;
+        }
+        .p-direccion{
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0;
+        }
+        .p-correo{
+          font-size: 20px;
+        }
+        .p-nombre{
+          letter-spacing:2px;
+          
+        }
+        .p-email{
+          letter-spacing:2px; 
+        }
+        .p-mensaje{
+          letter-spacing:2px; 
+        }
+        .boton_envia{
+          background-color: $color_primario;
+          color:white;
+          font-size: 16px;
+          font-weight: 900;
+          padding: 10px 30px 10px 30px;
+        }
+        .div-footer{
+          width: 100%;
+          margin-right: 90px;
+          margin-bottom: 50px;
+          width: 100%;
+          margin-top: 81px;
+          .p-siguenos{
+            font-size: 13px;
+            letter-spacing: 6px;
+            font-weight: bold;
+          }
+        }
+      }
+      
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .maximo{
+    display: none;
+  }
+  .minimo{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    margin-top: -80px;
+    .carousel-item{
+    }
+  }
+  
+  .home{  
+  
+    
+    .imghome1{
+      
+      background-image: url('../../assets/imagenes/home/mobil/fondo1.png');
+      
+      .container-encabezado{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        .encabezado{
+          background-size: 100px;
+          background-position-x: center;
+          height: 40px;
+          .button-contactenos{
+            display: none;
+          }
+        }
+        
+      }
+      .div-container{
+        .div-row{
+          margin-top: 1%;
+          .section-text-header{
+            padding-left: 15px;
+            .sub-section-text-header{
+              width: 100%;
+              text-align: center;
+              .p-texto-entretenimiento{
+                font-size: 2.5rem;
+                width: 100%;
+              }
+              .p-presente{
+                font-size: 1.3em;
+                margin-top: 3%;
+                width: 100%;
+              }
+              .computadora-home1{
+                display: inline!important;
+                img{
+                  width: 110%;
+                  margin-top: 1%;
+                  right: 2em;
+                  position: relative;
+                }
+              }
+              .container-contador1{
+                display: contents!important;
+                .gamarra-numerador{
+                  margin-top: -10px;
+                  justify-content: center;
+                  width: 100%;
+                  .p-numerador{
+                    letter-spacing: 0.3em;
+                    font-size: 0.5em;
+                  }
+                }
+              }
+              .div-exitos{
+                margin-top: -5px;
+                width: 180%;
+                margin-left: -120px;
+                
+              }
+              .p-exitos{
+                margin-left: 0px;
+                width: 100%;
+                color:white;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 4px;
+                width: 100%;
+              }
+              
+            }
+          }
+          .computadora-home2{
+            display: none;
+          }
+        }
+      }
+      .container-contador2{
+        display: none;
+      }
+      .seccion-hacemos{
+        text-shadow: 1px 1px 4px black;
+          background-image: url('../../assets/imagenes/home/Map.png');
+      
+          .p-hacemos{
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 6px;
+            color: $color_secundario;
+            font-weight: bold;
+            margin: 0;
+          }
+          .p-texto-hacemos{
+            margin-top: 21px;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+          }
+          .div-numero-clientes{
+            text-align: center;
+            justify-content: center;
+            margin-top: 0.7%;
+            .color-div-clientes{
+              position: relative;
+              color:$color_secundario;
+           
+              .p-numero-clientes{
+                font-size: 4.5em;
+                margin-top: -40px;
+                margin-bottom: -10px;
+                font-weight: 900;
+              }
+              .p-texto-cliente{
+                margin-top: -20px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 6px;
+              }
+            }
+            .color-div-web{
+              position: relative;
+              color: $color_celeste;
+              .p-numero-web{
+                font-size: 4.5em;
+                margin-top: -40px;
+                margin-bottom: -10px;
+                font-weight: 900;
+              }
+              .p-texto-web{
+                margin-top: -20px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 6px;
+              }
+            }
+          }
+        }
+      
+    }
+    
+    .imghome2{
+      background-image: url('../../assets/imagenes/home/mobil/fondo2.png');
+      margin-top: -1px;
+      margin-bottom: -1px;
+      .mejores{
+        color: white;
+        text-align: center;
+        position: relative;
+        margin-bottom: -3.5em;
+        .p-text-somos{
+          font-size: 1.8em;
+          font-weight: 900;
+          margin: 0;
+          line-height: 0;
+        }
+        .p-text-mejores{
+          margin-top: 0;
+          margin-bottom: 1.5em;
+          font-size: 2.5em;
+          font-weight: 900;
+        }
+      }
+      // .card2{
+      //   display: inline!important;
+      // }
+      // .card-scroll{
+        .carousel-indicators{
+          width: 100%;
+          text-align: center;
+          bottom: -74px;
+        }
+        // .card{
+        //   height: 25em!important;
+        //   width: 80%;
+        //   margin-left: 10%;
+        //   margin-right: 10%;
+          
+        //   .logo-card{
+        //     margin-top: 10%;
+        //     margin-bottom: 10%;
+        //   }
+        //   .div-guion{
+        //     margin-bottom: 10%;
+        //   }
+        //   .ver-mas-card{
+        //     margin: 0;
+        //   }
+        // }
+        // .card:hover{
+        //   height: 1rem !important;
+        // }
+
+        .nombre-curso{
+          margin-bottom: 5%;
+          font-size: 1em!important;
+        }
+      
+
+      // }
+      .div-portafolio{
+        .div-text-portafolio{
+          margin-left: 0px!important;
+          .text-portafolio{
+            font-size: 1.5em!important;
+          }
+        }
+        .iconos-redes{
+          display: none;
+        }
+      }
+      .card1{
+        display: none!important;
+      }
+    }
+
+    .imghome3{
+      background-image: url('../../assets/imagenes/home/mobil/fondo2.png');
+      .section-apps{
+        .img-app1{
+          right: 0;
+          width: 80%;
+        }
+        .rigth-icon-app{
+          display: inline!important;
+        }
+        .div-text-cliente{
+          text-align-last: center;
+          .text-contenido-cliente{
+            font-size: 1em!important;
+            margin-top: 3%!important;
+            margin-bottom: 3%!important;
+          }
+          .button-details{
+            outline: none;
+            margin-right: 0!important;
+            margin-top: 5%!important;
+            margin-bottom: 6%!important;
+          }
+        }
+        .div-vistas{
+          .p-vista-numero{
+            font-size: 3em!important;
+          }
+          .p-texto-visitas{
+            letter-spacing: 0.3em!important;
+          }
+          .p-numero-conversion{
+            font-size: 3em!important;
+          }
+          .p-text-conversion{
+            letter-spacing: 0.3em!important;
+          }
+        }
+        .button-rigth-portafolio{
+          display: none;
+        }
+        .div-img-app2{
+          display: none;
+        }
+      }
+      .flex-casos-exito{
+        flex-flow: wrap;
+        .p-text-exitos{
+          width: 100%;
+          font-size: 0.7em!important;
+          letter-spacing: 0.2em!important;
+        }
+        .img-icon-exitos{
+          margin: 0px;
+          width: 100%;
+        }
+      }
+      .div-nuestro-equipo{
+        .p-nuestro-equipo{
+          display: none;
+        }
+        .div-equipos{
+          background-color: #AEF455;
+          .p-nombre-equipo{
+            font-size: 0.9em!important;
+            margin: 0!important;
+            color: #00163a;
+          }
+          .p-area-equipo{
+            font-size: 0.5em!important;
+            color: #34c9f7;
+          }
+          .p-contenido-area{
+            font-size: 0.7em!important;
+            color: #00163a;
+          }
+        }
+      }
+      .texto_nuestro_equi{
+        font-size: 2.5em;
+      }
+      .equipo_texto{
+        background-color: $color_secundario;
+        margin-bottom:6px ;
+        font-size: 12px;
+        color: $color_primario;
+      }
+      .p-exitos{
+        color:white;
+        font-weight: 800;
+        font-size: 16px;
+        text-align: center;
+        
+      }
+      .p-exitos-icono{
+        text-align: center;
+        margin-bottom: -180px;
+      }
+    }
+
+    .section-casos{
+      .gerente{
+        margin-top: -120px;
+        position: relative;
+      }
+      .comillas{
+        margin-top: 50px;
+      }
+      .img-empresas{
+        width: 100%;
+        margin-bottom: 0;
+      }
+      .testimonio{
+        margin-bottom: -100px;
+      }
+    }
+    .section-contactanos{
+      padding-top: 5%;
+      
+      .container{
+        text-align: center;
+        .p-estamos{
+          font-size: 1em;
+          letter-spacing: 0.1em;
+          margin-bottom: 5%;
+        }
+        .dato-empresa{
+          
+          margin: 0!important;
+          p{
+            font-size: 0.8em;
+          }
+        }
+        .nombre-email{
+          p{
+            text-align: left;
+          }
+          .p-email{
+            margin-top: 5%;
+          }
+          margin: 0!important;
+        }
+        .mensaje{
+          margin: 0!important;
+          p{
+            text-align: left;
+          }
+          .p-mensaje{
+            margin-top: 5%;
+          }
+          textarea{
+            width: 100%;
+          }
+        }
+        .div-button{
+          margin: 5%;
+          width: auto;
+          text-align-last: center;
+          button{
+            margin-top: 0px;
+            width: 100%;
+            height: 40px;
+          }
+        }
+      }
+      .div-footer{
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .img-logo-footer{
+          display: none;
+        }
+        .imagenes-footer{
+          width: 100%!important;
+        }
+      }
+      .estamos_para{
+        text-align: center;
+      }
+    }
+  }
+    // 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+  .p-exitos{
+    color:white;
+    font-weight: 800;
+  }
+  .container-nav{
+    padding-top:10px ;
+  }
+  .button-contactenos{
+    font-family: Arial, Helvetica, sans-serif;
+    outline:none;
+    position: absolute;
+    top:12px;
+    height: 45px;
+    width: 162px;
+    color: #002A60;
+    background-color: $color_secundario;
+    right: 10px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight:900;
+ }
+ .button-contactenos:hover{
+ outline: none;
+  animation: contactanos 0.5s forwards;
+ }
+ @keyframes contactanos {
+  from{}
+  to{box-shadow: 0px 0px 15px black;}
+  to{transform: scale(1.05);}
+ }
+//  
+  .button-contactenos{
+    font-family: Arial, Helvetica, sans-serif;
+    outline:none;
+    position: absolute;
+    top:12px;
+    height: 45px;
+    width: 162px;
+    color: #002A60;
+    background-color: $color_secundario;
+    right: 10px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight:900;
+ }
+ .button-contactenos:hover{
+ outline: none;
+  animation: contactanos 0.5s forwards;
+ }
+ @keyframes contactanos {
+  from{}
+  to{box-shadow: 0px 0px 15px black;}
+  to{transform: scale(1.05);}
+ }
+ 
+  .home{
+    .imghome1{
+      // background-position-x: -160px;
+      // background-position-y: 30px;
+      // background-size: 200%;
+      background-image: url('../../assets/imagenes/home/mobil/fondo1.png');
+      // .container-nav{
+      //   //padding-left: 0;
+      //   position: fixed;
+
+      //   z-index: 1;
+      //   background-image: url(../../assets/imagenes/home/mobil//fondo1.png);
+      //   //background-size: 200%;
+      
+      .div-container{
+        .div-row{
+          margin-top: 1%;
+          .section-text-header{
+            padding-left: 10em;
+            .sub-section-text-header{
+              width: 100%;
+              text-align: center;
+              
+              .computadora-home1{
+                display: none!important;
+                img{
+                  width: 110%;
+                  margin-top: 1%;
+                  right: 2em;
+                  position: relative;
+                }
+              }
+              .container-contador1{
+                display: none!important;
+                // .gamarra-numerador{
+                //   justify-content: center;
+                //   width: 100%;
+                //   .p-numerador{
+                //     letter-spacing: 0.3em;
+                //     font-size: 0.5em;
+                //   }
+                // }
+              }
+              .p-texto-entretenimiento{
+                margin-top: 80px;
+                margin-bottom: 30px;
+                margin-left: -100px;
+                font-size: 3em;
+                width: 100%;
+                text-align: initial;
+              }
+              .p-presente{      
+                margin-left: -100px;
+                font-size: 2.8em;
+                width: 300%;
+                line-height: 0.2;
+                text-align: initial;
+              }
+              .div-exitos{
+                margin-top: 90px;
+                width: 300%;
+                margin-left: -120px;
+              }
+              .p-exitos{
+                margin-left: 0px;
+                padding-top: -5px;
+                width: 100%;
+                color:white;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 4px;
+                width: 100%;
+              }
+              
+            }
+          }
+          .computadora-home2{
+            display: inline;
+            right: 6em;
+            position: relative;
+          }
+        }
+      }
+      .container-contador2{
+        display: contents;
+        .gamarraya-contador{
+          margin-right: 0px;
+          .gamarra-numerador{
+            margin-left: -19em;
+          }
+        }
+      }
+      .seccion-hacemos{
+        // padding-top: 6%;
+        // margin-top: 0;
+        //background-image: url(../../assets/imagenes/home/mobil/fondo2.png);
+        .p-hacemos{
+          letter-spacing: 0.1em;
+          font-size: 1.5em;
+        }
+        .p-texto-hacemos{
+          font-size: 0.8em;
+        }
+        .iconos-redes{
+          display: inline;
+        }
+        .div-numero-clientes{
+          .color-div-clientes{
+            position: relative;
+            color:$color_secundario;
+         
+            .p-numero-clientes{
+              font-size: 6.5em;
+              margin-top: -40px;
+              margin-bottom: -10px;
+              font-weight: 900;
+            }
+            .p-texto-cliente{
+              margin-top: -20px;
+              font-size: 13px;
+              font-weight: 700;
+              letter-spacing: 6px;
+            }
+          }
+          .color-div-web{
+            position: relative;
+            color: $color_celeste;
+            .p-numero-web{
+              font-size: 6.5em;
+              margin-top: -40px;
+              margin-bottom: -10px;
+              font-weight: 900;
+            }
+            .p-texto-web{
+              margin-top: -20px;
+              font-size: 13px;
+              font-weight: 700;
+              letter-spacing: 6px;
+            }
+          }
+        }
+      }
+      
+    }
+    
+    .imghome2{
+      background-image: url('../../assets/imagenes/home/mobil/fondo2.png');
+      margin-top: -1px;
+      margin-bottom: -1px;
+      .mejores{
+        // .p-text-somos{
+        //   font-size: 2em;
+        //   margin-bottom: 1rem;
+        // }
+        // .p-text-mejores{
+        //   font-size: 2em;
+        // }
+      }
+      // .card2{
+      //   display: none!important;
+      // }
+      // .card-scroll{
+        .carousel-indicators{
+          // display: none;
+          bottom: -20%;
+        }
+        // .card{
+        //   height: 26em !important;
+        //   width: 90%;
+        //   margin-left: 5%;
+        //   margin-right: 5%;
+          
+        //   .logo-card{
+        //     margin-top: 10%;
+        //     margin-bottom: 10%;
+        //   }
+        //   .div-guion{
+        //     margin-bottom: 10%;
+        //   }
+        //   .ver-mas-card{
+        //     margin: 0;
+        //   }
+        // }
+        // .card:hover{
+        //   height: 30em !important;
+        // }
+
+        .nombre-curso{
+          margin-bottom: 5%;
+          font-size: 1em!important;
+        }
+        
+
+      // }
+      .div-portafolio{
+        .div-text-portafolio{
+          margin-left: 0px!important;
+          padding-left: 10%;
+          .text-portafolio{
+            font-size: 1.5em!important;
+          }
+        }
+        .iconos-redes{
+          display: inline!important;
+        }
+      }
+      .card1{
+        display: inline!important;
+      }
+    }
+
+    .imghome3{
+      //background-image: url(../../assets/imagenes/home/mobil/fondo2.png);
+      .section-apps{
+        .img-app1{
+          right: 180%;
+          // width: 80%;
+        }
+        .rigth-icon-app{
+          display: none!important;
+        }
+        .div-text-cliente{
+          text-align-last: center;
+          padding-left: 0px;
+          padding-right: 0px;
+          .text-contenido-cliente{
+            font-size: 1em!important;
+            margin-top: 3%!important;
+            margin-bottom: 3%!important;
+          }
+          .button-details{
+            outline: none;
+            margin-right: 0!important;
+            margin-top: 5%!important;
+            margin-bottom: 6%!important;
+          }
+        }
+        .div-vistas{
+          .p-vista-numero{
+            font-size: 2em !important;
+          }
+          .p-texto-visitas{
+            letter-spacing: 0!important;
+          }
+          .p-numero-conversion{
+            font-size: 2em !important;
+          }
+          .p-text-conversion{
+            letter-spacing: 0!important;
+          }
+        }
+        .button-rigth-portafolio{
+          display: inline;
+        }
+        .div-img-app2{
+          display: inline;
+        }
+      }
+      .flex-casos-exito{
+        flex-flow: wrap;
+        .p-text-exitos{
+          width: 100%;
+          font-size: 0.7em!important;
+          letter-spacing: 0.2em!important;
+        }
+        .img-icon-exitos{
+          margin: 0px;
+          width: 100%;
+        }
+      }
+      .div-nuestro-equipo{
+        .p-nuestro-equipo{
+          display: none;
+        }
+        .div-equipos{
+          background-color: #AEF455;
+          .p-nombre-equipo{
+            font-size: 0.9em!important;
+            margin: 0!important;
+            color: #00163a;
+          }
+          .p-area-equipo{
+            font-size: 0.5em!important;
+            color: #34c9f7;
+          }
+          .p-contenido-area{
+            font-size: 0.7em!important;
+            color: #00163a;
+          }
+        }
+      }
+    }
+    .section-casos{
+      .img-gerente{
+        top: -18em;
+        left: 50%;
+        width: 50%;
+      }
+      .img-comillas{
+        top: -8em;
+        left: 18%;
+        width: 10%;
+      }
+      .div-testimonio{
+        span{
+          display: none;
+        }
+        // .p-testimonio{
+        //   font-size: 0.9em!important;
+        //   margin: 8%!important;
+        // }
+      }
+      // .p-nombre-cliente{
+      //   color: #002A60;
+      //   font-size: 0.8em;
+      // }
+      .img-empresas{
+        margin: 0px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .section-contactanos{
+      padding-top: 5%;
+      
+      .container{
+        text-align: center;
+        .p-estamos{
+          font-size: 1em;
+          letter-spacing: 0.1em;
+          margin-bottom: 5%;
+        }
+        .dato-empresa{
+          
+          margin: 0!important;
+          p{
+            font-size: 0.8em;
+          }
+        }
+        .nombre-email{
+          p{
+            text-align: left;
+          }
+          .p-email{
+            margin-top: 5%;
+          }
+          margin: 0!important;
+        }
+        .mensaje{
+          margin: 0!important;
+          p{
+            text-align: left;
+          }
+          .p-mensaje{
+            margin-top: 5%;
+          }
+          textarea{
+            width: 100%;
+          }
+        }
+        .div-button{
+          margin: 5%;
+          width: auto;
+          text-align-last: center;
+          button{
+            margin-top: 0px;
+            width: 100%;
+            height: 40px;
+          }
+        }
+      }
+      .div-footer{
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .img-logo-footer{
+          display: none;
+        }
+        .imagenes-footer{
+          width: 100%!important;
+        }
+      }
+    }
+  }
+
+
+  .gerente{
+    margin-top: -100px;
+  }
+
+  .section-contactanos{
+    .estamos_para{
+      text-align: center;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container-nav{
+    padding: 0;
+    margin-top: -20px;
+  }
+  .button-contactenos{
+    font-family: Arial, Helvetica, sans-serif;
+    outline:none;
+    position: absolute;
+    top:50px;
+    height: 45px;
+    width: 162px;
+    color: #002A60;
+    background-color: $color_secundario;
+    right: 20px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight:900;
+ }
+ .button-contactenos:hover{
+ outline: none;
+  animation: contactanos 0.5s forwards;
+ }
+ @keyframes contactanos {
+  from{}
+  to{box-shadow: 0px 0px 15px black;}
+  to{transform: scale(1.05);}
+ }
+ .div-app-bar{
+   z-index: 500;
+  height: 110px;
+  .button-contactenos{
+    font-family: Arial, Helvetica, sans-serif;
+    outline:none;
+    position: absolute;
+    top:50px;
+    height: 45px;
+    width: 162px;
+    color: #002A60;
+    background-color: $color_secundario;
+    right: 20px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight:900;
+ }
+ .button-contactenos:hover{
+ outline: none;
+  animation: contactanos 0.5s forwards;
+ }
+ @keyframes contactanos {
+  from{}
+  to{box-shadow: 0px 0px 15px black;}
+  to{transform: scale(1.05);}
+ }
+ }
+  .home{
+    
+    .imghome1{
+      background-image: url('../../assets/imagenes/home/fondo1.png');
+      background-size: 100%;
+      .container-encabezado{
+        padding-top: 37px;
+        padding-bottom: 37px;
+        .encabezado{
+          background-size: 216px 60px;
+          background-repeat: no-repeat;
+          height: 60px;
+          background-position-x: 50%;
+          text-align: end;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+        }
+      }
+      .div-container{
+        .div-row{
+          margin-top: 4%;
+          .section-text-header{
+            padding-left: 10em;
+            .sub-section-text-header{
+              width: 100%;
+              text-align: center;
+              .p-texto-entretenimiento{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                margin-left: -100px;
+                font-size: 3.5em;
+                width: 100%;
+                text-align: initial;
+              }
+              .p-presente{  
+                
+                margin-left: -100px;
+                font-size: 2.8em;
+                width: 200%;
+                line-height: 0.6;
+                text-align: initial;
+              }
+              .computadora-home1{
+                display: none!important;
+                img{
+                  width: 110%;
+                  margin-top: 1%;
+                  right: 2em;
+                  position: relative;
+                }
+              }
+              .container-contador1{
+                display: none!important;
+                // .gamarra-numerador{
+                //   justify-content: center;
+                //   width: 100%;
+                //   .p-numerador{
+                //     letter-spacing: 0.3em;
+                //     font-size: 0.5em;
+                //   }
+                // }
+              }
+              
+              
+            }
+          }
+          .computadora-home2{
+            display: inline;
+            right: 6em;
+            position: relative;
+            img{
+              width: 140%;
+            }
+          }
+        }
+      }
+      .container-contador2{
+        display: contents;
+        .gamarraya-contador{
+          margin-right: 0px;
+          .gamarra-numerador{
+            margin-left: -10em;
+          }
+        }
+      }
+      .seccion-hacemos{
+        // padding-top: 4%;
+        // margin-top: 0;
+        //background-image: url(../../assets/imagenes/home/mobil/fondo2.png);
+        .p-hacemos{
+          letter-spacing: 0.1em;
+          font-size: 1.5em;
+        }
+        .p-texto-hacemos{
+          font-size: 1.2em;
+        }
+        .iconos-redes{
+          display: inline;
+        }
+        .div-numero-clientes{
+          // .color-div-clientes{
+          //   .p-numero-clientes{
+          //     font-size: 3em;
+          //     font-weight: 900;
+          //     margin-bottom: 0;
+          //   }
+          //   .p-texto-cliente{
+          //     font-size: 0.5em;
+          //     font-weight: 700;
+          //     letter-spacing: 0.5em;
+          //   }
+          // }
+          // .color-div-web{
+          //   .p-numero-web{
+          //     font-size: 3em;
+          //     font-weight: 900;
+          //     margin-bottom: 0;
+          //   }
+          //   .p-texto-web{
+          //     font-size: 0.5em;
+          //     font-weight: 700;
+          //     letter-spacing: 0.5em;
+          //   }
+          // }
+        }
+      }
+      
+    }
+    
+    .imghome2{
+      background-image: url('../../assets/imagenes/home/mobil/fondo2.png');
+      margin-top: -1px;
+      margin-bottom: -1px;
+      padding-top: 5%;
+      .mejores{
+        // .p-text-somos{
+        //   font-size: 2em;
+        //   margin-bottom: 1rem;
+        // }
+        // .p-text-mejores{
+        //   font-size: 2em;
+        // }
+      }
+      // .card2{
+      //   display: none!important;
+      // }
+      // .card-scroll{
+        // padding-bottom: 8%;
+        .carousel-indicators{
+          // display: flex;
+          bottom: -25%;
+          //bottom: -20%;
+        }
+        // .card{
+        //   height: 25em !important;
+        //   width: 90%;
+        //   margin-left: 5%;
+        //   margin-right: 5%;
+        //   .logo-card{
+        //     margin-top: 10%;
+        //     margin-bottom: 10%;
+        //   }
+        //   .div-guion{
+        //     margin-bottom: 10%;
+        //   }
+        //   .ver-mas-card{
+        //     margin: 0;
+        //   }
+        // }
+        // .card:hover{
+        //   height: 28em !important;
+
+        // }
+
+        .nombre-curso{
+          margin-bottom: 5%;
+          font-size: 1em!important;
+        }
+     
+
+      // }
+      .div-portafolio{
+        .div-text-portafolio{
+          margin-left: 0px!important;
+          padding-left: 10%;
+          .text-portafolio{
+            font-size: 3em!important;
+          }
+        }
+        .iconos-redes{
+          display: inline!important;
+        }
+      }
+      .card1{
+        display: block!important;
+      }
+    }
+
+    .imghome3{
+      height: 100%;
+      .div-exitos{
+        margin-top: 90px;
+        width: 180%;
+        margin-left: -120px;
+      }
+      .p-exitos{
+        margin-left: 0px;
+        padding-top: -5px;
+        width: 100%;
+        color:white;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        width: 100%;
+      }
+      //background-image: url(../../assets/imagenes/home/mobil/fondo2.png);
+      .section-apps{
+        .img-app1{
+          right: 100%;
+          // width: 80%;
+        }
+        .rigth-icon-app{
+          display: none!important;
+        }
+        .div-text-cliente{
+          text-align-last: center;
+          padding-left: 0px;
+          padding-right: 0px;
+          .text-contenido-cliente{
+            font-size: 1em!important;
+            margin-top: 3%!important;
+            margin-bottom: 3%!important;
+          }
+          .button-details{
+            margin-right: 0!important;
+            margin-top: 5%!important;
+            margin-bottom: 6%!important;
+          }
+        }
+        .div-vistas{
+          .p-vista-numero{
+            font-size: 3em !important;
+          }
+          .p-texto-visitas{
+            letter-spacing: 0!important;
+          }
+          .p-numero-conversion{
+            font-size: 3em !important;
+          }
+          .p-text-conversion{
+            letter-spacing: 0!important;
+          }
+        }
+        .button-rigth-portafolio{
+          display: inline;
+        }
+        .div-img-app2{
+          display: inline;
+        }
+      }
+      .flex-casos-exito{
+        display: -webkit-box!important;
+        width: 100%;
+        .p-text-exitos{
+          width: auto;
+          font-size: 0.7em!important;
+          letter-spacing: 0.2em!important;
+        }
+        .img-icon-exitos{
+          margin: 0px;
+          
+        }
+      }
+      .div-nuestro-equipo{
+        .p-nuestro-equipo{
+          display: none;
+        }
+        .div-equipos{
+          background-color: #AEF455;
+          .p-nombre-equipo{
+            font-size: 0.9em!important;
+            margin: 0!important;
+            color: #00163a;
+          }
+          .p-area-equipo{
+            font-size: 0.5em!important;
+            color: #34c9f7;
+          }
+          .p-contenido-area{
+            font-size: 0.7em!important;
+            color: #00163a;
+          }
+        }
+      }
+    }
+    .section-casos{
+      .img-gerente{
+        top: -25em;
+        left: 78%;
+        width: 80%;
+      }
+      .img-comillas{
+        top: -8em;
+        left: 18%;
+        width: 10%;
+      }
+      .div-testimonio{
+        span{
+          display: none;
+        }
+        // .p-testimonio{
+        //   font-size: 0.9em!important;
+        //   margin: 8%!important;
+        // }
+      }
+      .p-nombre-cliente{
+        color: #002A60;
+        font-size: 0.8em;
+      }
+      .img-empresas{
+        margin: 0px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .section-contactanos{
+      padding-top: 5%;
+      
+      .container{
+        text-align: center;
+        .p-estamos{
+          font-size: 1em;
+          letter-spacing: 0.1em;
+          margin-bottom: 5%;
+        }
+        .dato-empresa{
+          
+          margin: 0!important;
+          p{
+            font-size: 0.8em;
+          }
+        }
+        .nombre-email{
+          p{
+            text-align: left;
+          }
+          .p-email{
+            margin-top: 5%;
+          }
+          margin: 0!important;
+        }
+        .mensaje{
+          margin: 0!important;
+          p{
+            text-align: left;
+          }
+          .p-mensaje{
+            margin-top: 5%;
+          }
+          textarea{
+            width: 100%;
+          }
+        }
+        .div-button{
+          margin: 0;
+          text-align-last: end;
+          button{
+            width: auto;
+            background-color: #002A60;
+            height: 57px;
+            padding-left: 28px;
+            padding-right: 28px;
+            border-radius: 10px;
+            margin-top: 46px;
+            color: white;
+            font-size: 13px;
+            letter-spacing: 3px;
+            border: 0;
+            font-weight: bold;
+          }
+        }
+      }
+      .div-footer{
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .img-logo-footer{
+          display: inline;
+          text-align-last: left;
+        }
+        .imagenes-footer{
+          width: 20%!important;
+          .p-siguenos{
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+
+  .home{
+    
+    .imghome1{
+      background-image: url('../../assets/imagenes/home/fondo1.png');
+      background-size: 100%;
+      .container-encabezado{
+        padding-top: 37px;
+        padding-bottom: 37px;
+        .encabezado{
+          background-image: url('../../assets/imagenes/rofailogo.svg');
+          background-size: 216px 60px;
+          background-repeat: no-repeat;
+          height: 60px;
+          background-position-x: 50%;
+          text-align: end;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+        }
+      }
+      .div-container{
+        .div-row{
+          margin-top: 6%;
+          .section-text-header{
+            padding-left: 10em;
+            .sub-section-text-header{
+              width: 100%;
+              text-align: center;
+              .p-texto-entretenimiento{
+                font-size: 3.5em;
+                width: 100%;
+                text-align: initial;
+              }
+              .p-presente{
+               
+                font-size: 3.5em;
+                margin-top: 6%;
+                width: 100%;
+                text-align: initial;
+              }
+              .computadora-home1{
+                display: none!important;
+                img{
+                  width: 110%;
+                  margin-top: 1%;
+                  right: 2em;
+                  position: relative;
+                }
+              }
+              .container-contador1{
+                display: none!important;
+                // .gamarra-numerador{
+                //   justify-content: center;
+                //   width: 100%;
+                //   .p-numerador{
+                //     letter-spacing: 0.3em;
+                //     font-size: 0.5em;
+                //   }
+                // }
+              }
+              .div-exitos{
+                margin-top: 90px;
+                width: 180%;
+                margin-left: -120px;
+              }
+              .p-exitos{
+                margin-left: 0px;
+                padding-top: -5px;
+                width: 100%;
+                color:white;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 4px;
+                width: 100%;
+              }
+              
+            }
+          }
+          .computadora-home2{
+            display: inline;
+            right: 6em;
+            position: relative;
+            img{
+              width: 140%;
+            }
+          }
+        }
+      }
+      .container-contador2{
+        display: contents;
+        .gamarraya-contador{
+          margin-right: 0px;
+          .gamarra-numerador{
+            margin-left: -10em;
+          }
+        }
+      }
+      .seccion-hacemos{
+        // padding-top: 4%;
+        // margin-top: 0;
+        //background-image: url(../../assets/imagenes/home/mobil/fondo2.png);
+        .p-hacemos{
+          letter-spacing: 0.5em;
+          font-size: 1.5em;
+        }
+        .p-texto-hacemos{
+          font-size: 1.2em;
+        }
+        .iconos-redes{
+          display: inline;
+        }
+        .div-numero-clientes{
+          // .color-div-clientes{
+          //   .p-numero-clientes{
+          //     font-size: 7em;
+          //     font-weight: 900;
+          //     margin-bottom: 0;
+          //   }
+          //   .p-texto-cliente{
+          //     font-size: 0.9em;
+          //     font-weight: 700;
+          //     letter-spacing: 0.5em;
+          //   }
+          // }
+          // .color-div-web{
+          //   .p-numero-web{
+          //     font-size: 7em;
+          //     font-weight: 900;
+          //     margin-bottom: 0;
+          //   }
+          //   .p-texto-web{
+          //     font-size: 0.9em;
+          //     font-weight: 700;
+          //     letter-spacing: 0.5em;
+          //   }
+          // }
+        }
+      }
+      
+    }
+    
+    .imghome2{
+      background-image: url('../../assets/imagenes/home/mobil/fondo2.png');
+      margin-top: -1px;
+      margin-bottom: -1px;
+      padding-top: 5%;
+      .mejores{
+        // .p-text-somos{
+        //   font-size: 4em;
+        //   margin-bottom: 1rem;
+        // }
+        // .p-text-mejores{
+        //   font-size: 4em;
+        // }
+      }
+      // .card2{
+      //   display: none!important;
+      // }
+      // .card-scroll{
+      //   padding-bottom: 8%;
+        .carousel-indicators{
+          // display: flex;
+          bottom: -25%;
+          //bottom: -20%;
+        }
+        // .card{
+        //   height: 25em !important;
+        //   width: 90%;
+        //   margin-left: 5%;
+        //   margin-right: 5%;
+        //   .logo-card{
+        //     margin-top: 10%;
+        //     margin-bottom: 10%;
+        //   }
+        //   .div-guion{
+        //     margin-bottom: 10%;
+        //   }
+        //   .ver-mas-card{
+        //     margin: 0;
+        //   }
+        // }
+        // .card:hover{
+        //   height: 28em !important;
+
+        // }
+
+        .nombre-curso{
+          margin-bottom: 5%;
+          font-size: 1em!important;
+        }
+       
+
+      // }
+      
+      .div-portafolio{
+        .div-text-portafolio{
+          margin-left: 0px!important;
+          padding-left: 10%;
+          .text-portafolio{
+            font-size: 3em!important;
+          }
+        }
+        .iconos-redes{
+          display: inline!important;
+        }
+      }
+      .card1{
+        display: block!important;
+      }
+    }
+
+    .imghome3{
+      //background-image: url(../../assets/imagenes/home/mobil/fondo2.png);
+      .section-apps{
+        .img-app1{
+          right: 50%;
+          // width: 80%;
+        }
+        .rigth-icon-app{
+          display: none!important;
+        }
+        .div-text-cliente{
+          text-align-last: center;
+          padding-left: 0px;
+          padding-right: 0px;
+          .text-cliente{
+            text-align-last: start;
+          }
+          .text-contenido-cliente{
+            text-align-last: auto;
+            font-size: 1.3em!important;
+            margin-top: 3%!important;
+            margin-bottom: 3%!important;
+          }
+          .button-details{
+            margin-right: 0!important;
+            margin-top: 5%!important;
+            margin-bottom: 6%!important;
+          }
+        }
+        .div-vistas{
+          .p-vista-numero{
+            font-size: 4em !important;
+          }
+          .p-texto-visitas{
+            letter-spacing: 0.6em !important;
+          }
+          .p-numero-conversion{
+            font-size: 4em !important;
+          }
+          .p-text-conversion{
+            letter-spacing: 0.6em !important;
+          }
+        }
+        .button-rigth-portafolio{
+          display: inline;
+        }
+        .div-img-app2{
+          display: inline;
+        }
+      }
+      .div-casos-exito-button{
+        margin-top: 10%;
+        padding-bottom: 12%;
+        .flex-casos-exito{
+          display: -webkit-box!important;
+          width: 100%;
+          .p-text-exitos{
+            width: auto;
+            font-size: 1em!important;
+            letter-spacing: 0.3em!important;
+          }
+          .img-icon-exitos{
+            margin-left: 40%;
+            
+          }
+        }
+      }
+      
+      .div-nuestro-equipo{
+        .p-nuestro-equipo{
+          display: block;
+          padding-top: 4%;
+          padding-bottom: 6%;
+        }
+        .div-equipos{
+          background-color: #AEF455;
+          .p-nombre-equipo{
+            font-size: 2em!important;
+            margin: 0!important;
+            color: #00163a;
+          }
+          .p-area-equipo{
+            font-size: 1em!important;
+            color: #34c9f7;
+          }
+          .p-contenido-area{
+            font-size: 20px !important;
+            color: #00163a;
+          }
+        }
+      }
+    }
+    .section-casos{
+      .img-gerente{
+        top: -33em;
+        left: 135%;
+        width: 100%;
+      }
+      .img-comillas{
+        top: -32em;
+        left: 131%;
+        width: 35%;
+      }
+      .div-testimonio{
+        span{
+          display: inline;
+        }
+        // .p-testimonio{
+        //   font-size: 1.5em !important;
+        //   font-weight: 300;
+        //   margin: 8%!important;
+        // }
+      }
+      .p-nombre-cliente{
+        font-size: 1.2em;
+        color: #AEF455;
+        font-weight: 800;
+      }
+      .img-empresas{
+        margin: 0px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .section-contactanos{
+      padding-top: 5%;
+      
+      .container{
+        text-align: center;
+        .p-estamos{
+          font-size: 2em;
+          font-weight: 800;
+          letter-spacing: 6px;
+          margin-bottom: 5%;
+          text-align-last: left;
+        }
+        .dato-empresa{
+          
+          margin: 0!important;
+          text-align-last: left;
+          p{
+            font-size: 1.3em;
+          }
+        }
+        .nombre-email{
+          p{
+            text-align: left;
+          }
+          .p-email{
+            margin-top: 5%;
+          }
+          margin: 0!important;
+        }
+        .mensaje{
+          margin: 0!important;
+          p{
+            text-align: left;
+          }
+          .p-mensaje{
+            margin-top: 5%;
+          }
+          textarea{
+            width: 100%;
+          }
+        }
+        .div-button{
+          margin: 0;
+          text-align-last: end;
+          button{
+            width: auto;
+            background-color: #002A60;
+            height: 57px;
+            padding-left: 28px;
+            padding-right: 28px;
+            border-radius: 10px;
+            margin-top: 46px;
+            color: white;
+            font-size: 13px;
+            letter-spacing: 3px;
+            border: 0;
+            font-weight: bold;
+          }
+        }
+      }
+      .div-footer{
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .img-logo-footer{
+          display: inline;
+          text-align-last: left;
+        }
+        .imagenes-footer{
+          width: 20%!important;
+          .p-siguenos{
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+
+}
